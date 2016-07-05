@@ -1,0 +1,9 @@
+Create a Classifier by using a set of Positive images of Bills and Negative images Similar to Bills i.e.. background walls, products, hands and tables.
+
+call the vector file to create a vector of the samples.
+
+create a classifier by giving the rectangular depth height and other parameters
+
+#exectuting the program with classifier#
+
+ python list_detector.py --image images/cat_01.jpg --cascade cascade.xml
