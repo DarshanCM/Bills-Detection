@@ -1,3 +1,5 @@
+Requirements : OpenCV , Python2.7 and Images (Edited images as per requirement for the positive images for the machine)
+
 Create a Classifier by using a set of Positive images of Bills and Negative images Similar to Bills i.e.. background walls, products, hands and tables.
 
 call the vector file to create a vector of the samples.
