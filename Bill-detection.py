@@ -1,5 +1,5 @@
 # USAGE
-# python list_detector.py --image images/cat_01.jpg --cascade cascade.xml
+# python list_detector.py --image images/bill_01.jpg --cascade cascade.xml
 
 # import the necessary packages
 from imutils import paths
@@ -40,9 +40,3 @@ for imagePath in paths.list_images(args["images"]):
 # show the detected list images
 	cv2.imshow("images", image)
 	cv2.waitKey(600)
-
-
-
-  
-
-
