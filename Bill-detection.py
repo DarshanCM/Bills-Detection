@@ -22,6 +22,7 @@ for imagePath in paths.list_images(args["images"]):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     detector = cv2.CascadeClassifier(args["cascade"])
     rects = detector.detectMultiScale(gray, scaleFactor=2.5, minNeighbors=2, minSize=(170, 170))
+    #works best for scale factor 2 but depends on the image resolution 
 
     
 
