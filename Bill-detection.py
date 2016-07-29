@@ -28,10 +28,7 @@ for imagePath in paths.list_images(args["images"]):
 
     for (i, (x, y, w, h)) in enumerate(rects):
 	cv2.rectangle(image, (x, y), (x + w, y + h), (255, 255, 255), 2)
-        #roi_gray = gray[y:y+h, x:x+w]
-       # roi_color = img[y:y+h, x:x+w]
-        #eyes = eye_cascade.detectMultiScale(roi_gray)
-	cv2.putText(image, "list #{}".format(i + 1), (x, y - 10),
+      	cv2.putText(image, "list #{}".format(i + 1), (x, y - 10),
 		cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 0, 255), 2)
         sys.stdout=open("test.txt","a")
         print "I found {0} lists in that image".format(i + 1)
